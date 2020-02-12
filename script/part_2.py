@@ -179,7 +179,6 @@ try:
     #get_calories_val()
 
 
-
     #contains_word_title()
 
     #start_with_character()
