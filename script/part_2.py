@@ -161,7 +161,7 @@ try:
     html_content = requests.get(url).text
 
     # Parse the html content
-    soup = BeautifulSoup(html_content, 'lxml')
+    soup = BeautifulSoup(html_content, 'html.parser')
 
     div_recipes = soup.find_all("div", attrs={"class": "fixed-recipe-card__info"})
 
