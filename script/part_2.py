@@ -166,21 +166,14 @@ try:
     div_recipes = soup.find_all("div", attrs={"class": "fixed-recipe-card__info"})
 
     list_recipes = get_receip_info(div_recipes)
-
     check_connection_es()
-
     index_data(list_recipes)
 
     #querying the  data
 
-    # get_data()
-
-    print("---------------------------------getting calories------------------------------")
+    #get_data()
     #get_calories_val()
-
-
     #contains_word_title()
-
     #start_with_character()
 
 except:
